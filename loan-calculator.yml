@@ -1,0 +1,8 @@
+provider:
+  name: faas
+  gateway: http://localhost:31112
+functions:
+  loan-calculator:
+    lang: node
+    handler: ./loan-calculator
+    image: padiazg/loan-calculator:latest
